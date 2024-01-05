@@ -33,7 +33,7 @@
                                 </div>
                                 <h1>{{item.cargo}} - {{item.empresa}}</h1>
                                 <p class="descricao">{{item.descricao}}</p>
-                                
+
                             <div class="vertical-timeline-element-content-arrow d-none d-md-block" :class="id == experiencias.length-1 ? 'bottom' : ''"></div>
                             </div>
                         </div>
@@ -51,10 +51,26 @@ export default {
     data(){
         return {
             experiencias:[
+              {
+                    cargo: 'Engenheiro de software sênior',
+                    empresa: 'Omint Saúde',
+                    ano: '2022 - 2024',
+                    descricao: 'Trabalhei nos projetos da Omint Saúde desenvolvendo o redesign dos aplicativos principais de associados, Kipp Saude, App Prestadores da Omint, Desenvolvimento de Frontend e seus padrões.',
+                    posicao: 'left',
+                    icon: 'devicon-devicon-plain'
+                },
+              {
+                    cargo: 'Tech Lead',
+                    empresa: 'Auzza Capital',
+                    ano: '2022 - 2023',
+                    descricao: 'Atuando na gestão de equipe de tecnologia, desenvolvimento de produto, regras de negócios e programando em Node.js (Backend) + Mysql e Mongodb + Nuxt.js e Next.js',
+                    posicao: 'right',
+                    icon: 'devicon-devicon-plain'
+                },
                 {
                     cargo: 'Fullstack',
                     empresa: 'AMA - Agentes do Meio Ambiente',
-                    ano: '2019 - Atual',
+                    ano: '2019 - 2022',
                     descricao: 'Atualmente estou apoiando todos os setores no desenvolvimento dos produtos de software, desde o desenvolvimento de ferramentas para o mapeamento de microáreas, infraestrutura devops, requisitos de software e com o foco maior no desenvolvimento web de front e back end.',
                     posicao: 'left',
                     icon: 'devicon-devicon-plain'
@@ -62,7 +78,7 @@ export default {
                 {
                     cargo: 'Fullstack',
                     empresa: 'Agência Candy',
-                    ano: '2013 - Atual',
+                    ano: '2013 - 2022',
                     descricao: 'Trabalhando com a parte Administrativa na gestão e com o desenvolvimento desde as partes gráficas como Photoshop, Illustrator, Premiere vetores logos cartões de visitas etc, como parte de front end, estruturação Bootstrap, UX UI, Wordpress, e parte de Programação em PHP, Ajax, Jquery, em sistemas personalizados aplicações de facebook, wireframes, integrações de sistemas e etc.Google analytics, Google Ads, Face Ads, Google Webmaster entre outras aplicações de divulgação e indexação.',
                     posicao: 'right',
                     icon: 'devicon-devicon-plain'
@@ -106,7 +122,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .experiencia{
-    
+
   background-color:#080808;
     z-index:2;
     position:relative;
@@ -123,7 +139,7 @@ export default {
                 bottom:0;
             }
         }
-        
+
         .linha{
             content: "";
             position: absolute;
@@ -170,7 +186,7 @@ export default {
             text-align:left;
             margin-bottom:0;
         }
-        
+
     .vertical-timeline-element-content-arrow{
         content: "";
         position: absolute;
